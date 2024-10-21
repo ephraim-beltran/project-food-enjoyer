@@ -1,7 +1,13 @@
+import { Header } from "./layout/Header";
+import { Main } from "./layout/Main";
+import { Footer } from "./layout/Footer";
+
 function App() {
   return (
     <>
-      <h1>This site is under contstruction</h1>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }
