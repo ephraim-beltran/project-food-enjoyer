@@ -22,6 +22,10 @@
   line-height: 180%;
 }
 
+.hero_search input[type="search"] {
+  flex-grow: 1;
+}
+
 .search_category {
   margin-left: auto;
 }
