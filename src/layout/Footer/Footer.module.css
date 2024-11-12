@@ -1,9 +1,9 @@
 .footer {
-  background-color: grey;
+  background-color: #295943;
   position: relative;
   padding: 3.13rem;
   width: 100%;
-  margin-to: auto;
+  margin-top: auto;
 }
 
 .footer h2 {
