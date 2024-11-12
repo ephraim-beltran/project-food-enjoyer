@@ -1,0 +1,42 @@
+.item_card {
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: #d9d9d9;
+  max-width: 36.1875rem;
+}
+
+.item_card img {
+  background-color: white;
+}
+
+.item_info {
+  padding: 1rem 1.44rem;
+  overflow: hidden;
+}
+
+.item_card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.category {
+  font-size: 0.875rem;
+  font-weight: 200;
+  margin-block: 0.3rem 0.15rem;
+}
+
+.address {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.item_card a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.item_card a:hover {
+  text-decoration: underline;
+}

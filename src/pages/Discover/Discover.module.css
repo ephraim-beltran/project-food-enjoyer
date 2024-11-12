@@ -1,0 +1,31 @@
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.result_container {
+  padding-inline: 0.75rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 1.33rem;
+}
+
+.listItem {
+  list-style-type: none;
+}
+
+.data_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.81rem;
+}
+
+.map {
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 36.25rem;
+}
