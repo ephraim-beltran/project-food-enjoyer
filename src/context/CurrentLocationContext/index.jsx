@@ -4,7 +4,10 @@ import { useState, useEffect } from "react";
 export const CurrentLocationContext = createContext();
 
 export function CurrentLocation({ children }) {
-  const [currentLocation, setCurrentLocation] = useState({});
+  const [currentLocation, setCurrentLocation] = useState({
+    lat: 43.653226,
+    lng: -79.3831843,
+  });
   function setPosition(position) {
     setCurrentLocation({
       lat: position.coords.latitude,

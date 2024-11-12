@@ -3,7 +3,6 @@ import { CurrentLocationContext } from "../../context/CurrentLocationContext";
 import {
   APIProvider,
   Map,
-  Marker,
   AdvancedMarker,
   Pin,
 } from "@vis.gl/react-google-maps";
