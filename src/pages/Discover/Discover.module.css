@@ -8,6 +8,8 @@
   display: flex;
   justify-content: center;
   column-gap: 1.33rem;
+  row-gap: 1.33rem;
+  flex-wrap: wrap-reverse;
 }
 
 .listItem {
@@ -27,5 +29,5 @@
   min-width: 0;
   flex-shrink: 1;
   flex-grow: 1;
-  flex-basis: 36.25rem;
+  flex-basis: 17rem;
 }
