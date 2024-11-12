@@ -8,7 +8,7 @@ export function Search() {
       <input type="search" placeholder="Search a city or location" />
       <label className={styled.search_category}>
         <select name="category" id="category">
-          <option value="all" disabled selected>
+          <option value="all" disabled defaultValue>
             Category
           </option>
           <option value="event">Event</option>
