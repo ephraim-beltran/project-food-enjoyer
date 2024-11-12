@@ -10,7 +10,7 @@ const navList = [
 export function Header() {
   return (
     <header className={styled.header}>
-      <h1 className={styled.h1}>Artful</h1>
+      <h1 className={styled.h1}>Green Routes</h1>
       <nav className={styled.nav}>
         <ul className={styled.nav_list}>
           {navList.map((item, index) => {

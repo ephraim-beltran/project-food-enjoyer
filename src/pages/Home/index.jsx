@@ -19,6 +19,7 @@ export function Home() {
         </div>
       </div>
 
+      {/* TODO: Replace Testimonials with About Us */}
       <div>
         <div className={styled.heading}>
           <h2>Testimonials</h2>
