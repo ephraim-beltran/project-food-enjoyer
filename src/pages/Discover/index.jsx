@@ -5,6 +5,7 @@ import { LocationMap } from "../../features/Map";
 import { useLocationData } from "../../hooks/useLocationData";
 import { CurrentLocation } from "../../context/CurrentLocationContext";
 import { useParams } from "react-router-dom";
+import { Loading } from "features/Loading";
 
 export function Discover() {
   let { searchItem } = useParams();
@@ -21,7 +22,7 @@ export function Discover() {
       <div className={styled.container}>
         <Search />
       </div>
-      {status == "loading" && <div>Loading...</div>}
+      {status == "loading" && <Loading />}
       {status == "error" && <div>There was an error fetcing data</div>}
       {status == "completed" && (
         <div className={`${styled.container} ${styled.result_container}`}>
