@@ -5,7 +5,9 @@ export function Hero() {
     <section id="hero" className={styled.hero}>
       <div className={styled.hero_container}>
         <div className={styled.hero_text}>
-          <span className={styled.hero_title}>Explore the art world</span>
+          <span className={styled.hero_title}>
+            Join our Green Routes Project!
+          </span>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,
