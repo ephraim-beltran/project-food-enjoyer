@@ -4,12 +4,14 @@ import { LocationCard } from "../../features/LocationCard";
 import { LocationMap } from "../../features/Map";
 import { useLocationData } from "../../hooks/useLocationData";
 import { CurrentLocation } from "../../context/CurrentLocationContext";
+import { useParams } from "react-router-dom";
 
 export function Discover() {
-  const { status, data } = useLocationData();
+  let { searchItem } = useParams();
+  const { status, data } = useLocationData(searchItem);
   const dataList = data?.map((item) => {
     return (
-      <li key={item.ID} className={styled.listItem}>
+      <li key={item.id} className={styled.listItem}>
         <LocationCard location={item} />
       </li>
     );

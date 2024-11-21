@@ -17,6 +17,9 @@ export function AppRouter() {
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
         <Route path="/discover" element={<Discover />} />
+        <Route path="/search" element={<Discover />}>
+          <Route path=":searchItem" element={<Discover />} />
+        </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Route>,

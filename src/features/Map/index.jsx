@@ -15,10 +15,10 @@ export function LocationMap({ locations }) {
   const markers = locations.map((location) => {
     return (
       <AdvancedMarker
-        key={location.ID}
+        key={location.id}
         position={{
-          lat: Number(location.Latitude),
-          lng: Number(location.Longitude),
+          lat: Number(location.lat),
+          lng: Number(location.lng),
         }}
       />
     );
