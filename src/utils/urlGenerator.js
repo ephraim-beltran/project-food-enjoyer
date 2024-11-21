@@ -1,4 +1,12 @@
-export function urlGenerator(url, searchItem) {
-  const filteredSearch = searchItem.replace(" ", "%20").replace("&", "%26");
-  return `${url}/search_or?name=*${filteredSearch}*&location=*${filteredSearch}*`;
+export function urlGenerator(url, { searchItem, category }) {
+  const link = new URL(`${url}/search_or`);
+  if (searchItem != "none") {
+    link.searchParams.append("name", `*${searchItem}*`);
+    link.searchParams.append("location", `*${searchItem}*`);
+  }
+  if (category != "all") {
+    category != "all" && link.searchParams.append("type", category);
+  }
+
+  return link.href;
 }
