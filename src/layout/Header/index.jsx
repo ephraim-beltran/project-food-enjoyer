@@ -5,7 +5,7 @@ const navList = [
   { text: "Home", path: "/" },
   { text: "Discover", path: "/discover" },
   { text: "Contact", path: "/contact" },
-  { text: "About Us", path: "/about-us" },
+  // { text: "About Us", path: "/about-us" },
 ];
 export function Header() {
   return (
@@ -28,16 +28,16 @@ export function Header() {
             );
           })}
         </ul>
+        <label>
+          <select
+            name="language"
+            id="language"
+            className={styled.language_selector}
+          >
+            <option value="english">EN</option>
+          </select>
+        </label>
       </nav>
-      <label>
-        <select
-          name="language"
-          id="language"
-          className={styled.language_selector}
-        >
-          <option value="english">EN</option>
-        </select>
-      </label>
     </header>
   );
 }

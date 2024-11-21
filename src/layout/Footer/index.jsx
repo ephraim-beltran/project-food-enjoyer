@@ -1,4 +1,5 @@
 import styled from "./Footer.module.css";
+import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <footer className={styled.footer}>
@@ -19,16 +20,7 @@ export function Footer() {
           <h3 className={styled.footer_heading}>Links</h3>
           <ul>
             <li>
-              <a href="#">Discover</a>
-            </li>
-            <li>
-              <a href="#">Events</a>
-            </li>
-            <li>
-              <a href="#">News</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
+              <Link to="/discover">Discover</Link>
             </li>
           </ul>
         </section>
@@ -36,13 +28,13 @@ export function Footer() {
           <h3 className={styled.footer_heading}>Categories</h3>
           <ul>
             <li>
-              <a href="#">Art</a>
+              <Link to="/discover">Art</Link>
             </li>
             <li>
-              <a href="#">Events</a>
+              <Link to="/discover">Events</Link>
             </li>
             <li>
-              <a href="#">Locations</a>
+              <Link to="/discover">Locations</Link>
             </li>
           </ul>
         </section>
@@ -53,9 +45,7 @@ export function Footer() {
             <br />
             Toronto, ON M5B 2K3
             <br />
-            <a href="tesl:+11234567890">(123) 456-7890</a>
-            <br />
-            <a href="mailto:artful@gmail.com">artful@gmail.com</a>
+            <a href="mailto:greenroutes@gmail.com">greenroutes@gmail.com</a>
           </address>
         </section>
       </div>

@@ -21,6 +21,7 @@
   width: 100%;
   font-weight: 400;
   line-height: 180%;
+  display: flex;
 }
 
 .nav_list {
@@ -44,4 +45,25 @@
 .language_selector {
   background: inherit;
   border: none;
+}
+
+@media only screen and (max-width: 774px) {
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    background-color: #295943;
+    max-width: 720px;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+    z-index: 100;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
